@@ -1,4 +1,4 @@
-from jogo import cadastrar_jogo, plataformas
+from jogo import cadastrar_jogo, listar_jogo, plataformas, jogos
 
 while(True):
     menu = int(input('\n(1) - Jogo\n(2) - Cliente\n(3) - Locações\n(4) - sair\n Digite: '))
@@ -19,7 +19,7 @@ while(True):
                     break
                 
                 elif (menu_jogo == 2):
-                    pass
+                    listar_jogo(jogos)
                     break
         
                 elif (menu_jogo == 3):
